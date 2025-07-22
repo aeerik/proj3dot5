@@ -41,9 +41,9 @@
         14
     ],
     "file_type": "csv",
-    "data_path": "data/adult/adult.data",
+    "data_path": "/mimer/NOBACKUP/groups/naiss2025-22-941/adult/adult.data",
     "val_path": null,
-    "test_path": "data/adult/adult.test",
+    "test_path": "/mimer/NOBACKUP/groups/naiss2025-22-941/adult/adult.test",
     "column_info": {
         "age": "float",
         "workclass": "str",

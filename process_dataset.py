@@ -14,7 +14,7 @@ TYPE_TRANSFORM ={
     'int', int
 }
 
-INFO_PATH = '/mimer/NOBACKUP/groups/naiss2025-22-941'
+INFO_PATH = 'data/Info'
 
 parser = argparse.ArgumentParser(description='process dataset')
 
@@ -399,6 +399,7 @@ def process_data(name):
             with open(test_path, 'r') as f:
                 lines = f.readlines()[1:]
                 test_save_path = f'data/{name}/test.data'
+                os.makedirs(os.path.dirname(test_save_path), exist_ok=True)
                 if not os.path.exists(test_save_path):
                     with open(test_save_path, 'a') as f1:     
                         for line in lines:
@@ -632,7 +633,7 @@ if __name__ == "__main__":
         process_data(args.dataname)
     else:
         for name in [
-                'default', 'shoppers', 'magic', 'beijing', 'news', 'news_nocat', 'diabetes',
+                'adult','default', 'shoppers', 'magic', 'beijing', 'news', 'news_nocat', 'diabetes',
                 'adult_dcr',
                 'default_dcr',
                 'shoppers_dcr',
