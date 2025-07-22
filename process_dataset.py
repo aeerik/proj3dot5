@@ -14,7 +14,7 @@ TYPE_TRANSFORM ={
     'int', int
 }
 
-INFO_PATH = 'data/Info'
+INFO_PATH = '/mimer/NOBACKUP/groups/naiss2025-22-941'
 
 parser = argparse.ArgumentParser(description='process dataset')
 
@@ -632,7 +632,7 @@ if __name__ == "__main__":
         process_data(args.dataname)
     else:
         for name in [
-                'adult', 'default', 'shoppers', 'magic', 'beijing', 'news', 'news_nocat', 'diabetes',
+                'default', 'shoppers', 'magic', 'beijing', 'news', 'news_nocat', 'diabetes',
                 'adult_dcr',
                 'default_dcr',
                 'shoppers_dcr',

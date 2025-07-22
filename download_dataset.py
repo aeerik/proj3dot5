@@ -2,7 +2,7 @@ import os
 from urllib import request
 import zipfile
 
-DATA_DIR = 'data'
+DATA_DIR = '/mimer/NOBACKUP/groups/naiss2025-22-941/'
 
 
 NAME_URL_DICT_UCI = {

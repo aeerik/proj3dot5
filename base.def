@@ -1,0 +1,9 @@
+Bootstrap: docker
+From: continuumio/miniconda3:23.5.2-0
+
+%files 
+    tabdiff.yaml
+
+%post 
+    opt/conda/bin/conda env update -n base -f tabdiff.yaml --prune
+    opt/conda/bin/conda update -n base -c defaults conda 
